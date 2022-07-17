@@ -362,8 +362,8 @@ footer{
 }
 
 .main__bg {
-  background-image: -moz-linear-gradient(-60deg, #ffadc1 50%, 
-  #9aadf9 50%);
+  background-image: -moz-linear-gradient(-60deg, #ff87c1 50%, 
+  #8be9d2 50%);
   animation: slide 3s ease-in-out infinite alternate;
   position: fixed;
   top: 0;
