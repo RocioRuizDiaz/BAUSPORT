@@ -230,15 +230,6 @@ textarea {
 #boton:hover {
   cursor: pointer;
 }
-
-#gridMain{
-  display:grid;
-  grid-template-columns:repeat(3, auto);
-  grid-template-rows:repeat(2,auto);
-  gap: 10px;
-  padding: 10px;
-  justify-content: center;
-}
 figure img{
   min-height: 300px;
   max-height: 300px;
@@ -327,16 +318,46 @@ footer{
   50% {margin-left: -200%;}
   70% {margin-left: -200%;}
 }
-
-#grid {
+/* grid*/
+/* se aplica en productos*/
+#gridProductos{
+  display:grid;
+  grid-template-columns:repeat(3, auto);
+  grid-template-rows:repeat(2,auto);
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+/* se aplica en promociones */
+#gridPromociones {
   display:grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   gap: 10px;
   padding: 10px;
   justify-content: center;
-  
 }
+/* se aplica a main */
+.gridMain{
+  display: grid;
+  grid-template-areas:
+  "header"
+  "main"
+  "footer";
+  gap:10px;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+}
+header{
+  grid-area: header;
+}
+main{
+  grid-area: main;
+}
+footer{
+  grid-area: footer;
+}
+
 figure img{
   min-height: 800x;
  
