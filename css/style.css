@@ -69,7 +69,7 @@ nav{
 }
 header{
   grid-area: header;
-  background-color:
+  background-color:#fff
 }
 main{
   grid-area: main;
@@ -149,6 +149,11 @@ article img{
   padding: 10px;
  
 }
+/*-------contacto-----*/
+.bg-tnb{
+  background-color:#5cc0f7
+}
+
  /* selectores de clase */
 
 .container{
