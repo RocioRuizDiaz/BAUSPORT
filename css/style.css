@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
 }
+
 a{
   text-decoration: none;
 }
@@ -14,12 +15,9 @@ h1{
   text-align: center;
   
 }
-.titulo{
-  text-align: center;
-}
 h2{
   font-family:Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 10px 30;
   text-align: center;
 }
@@ -27,12 +25,30 @@ h3{
   font-family:Arial, Helvetica, sans-serif;
   font-size: 1rem;
   margin: 20px
+}
+.tittle{
+  text-align: center;
+  font-size: 1em;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  
 
 }
-
-.logo{
-  width: 150px;
+/*    Navbar   */
+.bg-orange{
+  background-color:#1c92d2
 }
+.nav-item{
+  font-family:'Roboto', sans-serif;
+  font-size: 1.8em;
+}
+#botonera{
+  padding: 10px;
+}
+/* Navbar---*/
+
+/*  main  */
 .gallery-container {
   display:grid;
   grid-template-areas:
@@ -48,12 +64,12 @@ h3{
 }
 nav{
   grid-area: nav;
-  background-color:#008F8C
+  background-color:y
   /* height: 500px; */
 }
 header{
   grid-area: header;
-  background-color:#008F8C
+  background-color:
 }
 main{
   grid-area: main;
@@ -67,33 +83,7 @@ aside{
   background-color: #fff;
 }
 footer{
-  grid-area: footer;
-  
-}
-.flex{
-  display: flex;
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
-  flex-wrap: nowrap;
-  justify-content: center;
-  gap: 20px;
-}
-.flex img{
-  width: 250px;
-  min-height:100px;
-  max-width: 100%;
-  object-fit: cover;
-  text-align: center;
-}
-div figure {
-  text-align: center;
-}
-div figure img{
-  height: auto;
- padding: 0;
- margin: 0;
-  
+  grid-area: footer; 
 }
 header{
   display: flex;
@@ -118,8 +108,8 @@ header nav ul li{
   text-align: center;
 }
 .photo img{
-  min-height: 800px;
-  max-height: 600px;
+  min-height: 900px;
+  max-height: 900px;
   max-width: 100%;
   object-fit: cover;
 }
@@ -128,31 +118,39 @@ nav ul li a{
   text-decoration: none;
 }
 nav ul li a:hover{
- background-color: #1c92d2;
- color: black;
+ background-color:orange;
+ 
 }
-p{
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height:1.6
+/* Main card*/
+.card-group{
+margin: 20px;
+padding: 20px;
+gap: 10px;
+font-size: 1.8rem;
+}
+.card-img-top{
+  width: 100%;
+ background-color: transparent;
+}
+/*----productos*/
+.card-group{
+  margin-top: 20px;
+  padding: 20px;
+  gap: 10px;
+  text-align: center;
+ position: center;
+}
+.card-img-top{
+  width: 75%;
+}
+
+article img{
+  width: 100%;
+  padding: 10px;
+ 
 }
  /* selectores de clase */
-.text-black{
-  color:black;
-  }
-.text-center{
-  text-align: center;
-}
-.text-rigth{
-  text-align: right;
-}
-.text-left{
-  text-align: left;
-}
-.text-italic{
- font-style: italic;
-}
+
 .container{
   display: flex;
   justify-content: center;
@@ -175,15 +173,16 @@ p{
  text-align:center;
  }
 .pie{
-  background-color:#008F8C;
+  background-color:black;
   text-align: center;
   padding: 10px 0;
+  color: white;
 }
 .pie__icon--sm{
-   width: 25px;
+   width: 30px;
 }
 .pie__titulo--md{
- font-size: 1rem;
+ font-size: 1em;
 }
 footer{
   width: 100%;
@@ -193,6 +192,10 @@ footer a{
   margin:5px;
   padding: 5px 0;
 }
+footer:hover{
+  background-color:aqua;
+  
+ }
 form {
   width: 450px;
   margin: auto;
@@ -259,54 +262,14 @@ footer{
   justify-content: center;
   align-items: center;
 }
-.text-black{
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 90px;
-  font-size: 1em;
-}
-.imagen{
-  margin: 10px;
-  text-align: center;
-}
-.flex{
-  display: flex;
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
-  flex-wrap: nowrap;
-}
-.flex img{
-  width: 250px;
-}
-
-.border{
-  border: 3px red solid;
-}
 /*  */
 .slider{
   width: 100%;
   margin: auto;
   overflow: hidden;
 }
-.slider ul{
-  display: flex;
-  padding: 0;
-  width: 300%;
-  
-
+.carousel slide{
   animation: cambio 20s infinite alternate;
-}
-.slider li {
-  width: 100%;
-  list-style: none;
-}
-.slider img {
-  width: 100%;
-  min-height:500px;
-  max-height: 300px;
-  max-width: 100%;
-  object-fit: cover;
-  
 }
 @keyframes cambio {
   0% {margin-left: 0;}
@@ -357,31 +320,11 @@ main{
 footer{
   grid-area: footer;
 }
-
-figure img{
-  min-height: 800x;
- 
-}
 footer{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.image{
-  margin: 30px;
-  text-align: center;
-} 
-.flex{
-  display: flex;
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
-
-}
-.flex img{
-  width: 250px;
-}
-
 .main__bg {
   background-image: -moz-linear-gradient(-60deg, #ff87c1 50%, 
   #8be9d2 50%);

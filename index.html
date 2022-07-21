@@ -6,74 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BauSport</title>
     <link rel="shortcut icon" href="./img/bs icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./js/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-   <div  class="gridMain">
-    <header>
-      <div>
-        <a href="./index.html"><img src="../img/prueba bs.png" alt="logo" class="logo"></a>
-      </div>
-      <nav >   
-         <ul>
-              <li>
-                 <a href="./index.html">Inicio</a>
-              </li>
-              <li>
-                 <a href="./pages/productos.html">Productos</a>
-              </li>
-              <li>
-                 <a href="./pages/marcas.html">Marcas</a>
-              </li>
-              <li>
-                 <a href="./pages/promociones.html">Promociones</a>
-              </li>
-              <li>
-                 <a href="./pages/contactos.html">Contactos</a>
-              </li>
+  <div class="tittle">
+    <p>ENVÍO GRATIS A PARTIR DE $18.999 - 3 Y 6 CUOTAS SIN INTERÉS
+    </p>
+  </div>
+   <!--inicio nav-->
+   <nav class="navbar navbar-expand-lg bg-orange" id="botonera">
+      <div class="container-fluid">
+        <a class="navbar-brand " href="./index.html"><img src="./img/prueba bs.png" alt="" width="120" height="me-auto" class="d-inline-block align-text-top"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="./pages/promociones.html">Promociones</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="./pages/contactos.html">Contactos</a>
+             </li>
+             <li class="nav-item ">
+              <a class="nav-link " href="./pages/marcas.html">
+                Marcas</a>
+            </li>
           </ul>
-      </nav>
-    </header>
-    <main>
-    <div>
-      <div class="slider">
-         <ul>
-            <li><img src="./img/galeria/ban1.jpg" alt=""></li>
-            <li><img src="./img/galeria/ban2.jpg" alt=""></li>
-            <li><img src="./img/galeria/ban3.jpg" alt=""></li>
-         </ul>
         </div>
+      </div>
+    </nav>
+   <!--fin nav---->
+
+   <!--carousel -->
+   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/galeria/ban1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/galeria/ban2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/galeria/ban3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+   <!-- fin carousel -->
+   <main>
+     <div class="container-fluid py-3">
+        <div class="row">
+         <article class="col-sm-12 col-md-6 col lg-3">
+            <img src="./img/doble1pumacrystal.jpg" alt="Puma" class="w-100">
+         </article>
+         <article class="col-sm-12 col-md-6 col lg-3">
+            <img src="./img/doble2adidasalways.jpg" alt="Adidas" class="w-100">
+         </article>
+        </div>
+     </div>
+     <h1> MUST HAVE</h1>
+       <!---inicio card-->
+       <div class="card-group">
+         <div class="card ">
+           <img src="./img/galeria/I1.jpg" class="card-img-top" alt="Zapatilla">
+           <div class="card-body">
+             <h2 class="card-title">Zapatillas Nike Air Force Fontanka</h2>
+             <p class="card-text">$36.799 </p>
+           </div>
+         </div>
+         <div class="card">
+            <img src="./img/galeria/m3.jpg" class="card-img-top" alt="Zapatilla">
+            <div class="card-body">
+              <h2 class="card-title">Zapatillas Nike Air Force 1 07 Lv8</h2>
+              <p class="card-text">$32.599 </p>
+            </div>
+          </div>
+         <div class="card">
+           <img src="./img/galeria/I3.jpg" class="card-img-top" alt="Zapatilla">
+           <div class="card-body">
+             <h2 class="card-title">Zapatillas Nike Air Force 1 07 Lv8</h2>
+             <p class="card-text">$32.599 </p>
+           </div>
+         </div>
+         <div class="card">
+           <img src="./img/galeria/I4.jpg" class="card-img-top" alt="Zapatilla">
+           <div class="card-body">
+             <h2 class="card-title">Zapatillas Nike Air Force 1 '07 Essential</h2>
+             <p class="card-text">$29.999 </p>
+           </div>
+         </div>
        </div>
+    </div>
+     </div>
        <div class="main__bg"></div>
        <div class="main__bg layer1"></div>
        <div class="main__bg layer2"></div>
-       <div class="photo">
-            <img src="./img/doble1pumacrystal.jpg" alt="Puma">
-            <img src="./img/doble2adidasalways.jpg" alt="Adidas">
-         </div>
-         <div class="flex">
-            <figure>
-               <img src="./img/galeria/I1.jpg" alt="">
-                 <figcaption class="text-black">Zapatillas Nike Air Force 1 Fontanka</figcaption>
-                 <p class="price text-black" >$36.799 </p>
-              </figure>
-              <figure>
-               <img src="./img/galeria/I3.jpg" alt="">
-               <figcaption class="text-black">Zapatillas Nike Air Force 1 07 Lv8</figcaption>
-               <p class="price text-black" >$32.599 </p>
-            </figure>
-            <figure>
-               <img src="./img/galeria/I4.jpg" alt="">
-               <figcaption class="text-black">Zapatillas Nike Air Force 1 '07 Essential</figcaption>
-               <p class="price text-black">$29.999 3</p>
-           </figure>
-           <figure>
-            <img src="./img/galeria/I2.jpg" alt="">
-            <figcaption class="text-black">Zapatillas Nike Blazer Mid 77</figcaption>
-            <p class="price text-black">$31.499 </p>
-        </figure>
-     </div>
-    </main>
+  <!----fin card-->
+   </main>
     <footer class="pie">
       <h3 class="pie__titulo--sm">Seguinos en nuestras redes</h3>
       <a href="https://instagram.com/">
@@ -90,5 +140,6 @@
      </a>
    </div>  
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
