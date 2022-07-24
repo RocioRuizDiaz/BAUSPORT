@@ -10,22 +10,11 @@ a{
 }
 h1{
   font-family:'Courier New', Courier, monospace;
-  font-size: 3rem;
+  font-size: 3em;
   margin: 20px;
   text-align: center;
-  
 }
-h2{
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 1.8rem;
-  margin: 10px 30;
-  text-align: center;
-}
-h3{
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  margin: 20px
-}
+
 .tittle{
   text-align: center;
   font-size: 1em;
@@ -43,9 +32,7 @@ h3{
   font-family:'Roboto', sans-serif;
   font-size: 1.8em;
 }
-#botonera{
-  padding: 10px;
-}
+
 /* Navbar---*/
 
 /*  main  */
@@ -123,25 +110,41 @@ nav ul li a:hover{
 }
 /* Main card*/
 .card-group{
+  width: 90%;
+  justify-content: center;
 margin: 20px;
 padding: 20px;
 gap: 10px;
 font-size: 1.8rem;
+border-radius: 6px;
 }
 .card-img-top{
-  width: 100%;
- background-color: transparent;
+width: 100%;
+border-radius: 6px;
+overflow: hidden;
+background: #fff;
+box-shadow: 0px 1px 10px rgba(0, 0, 0, 0,2);
+cursor: default;
+transition: all 400ms ease;
+}
+.card-img-top:hover{
+  box-shadow:  5px 5px 20px rgba(0, 0, 0, 0);
+  transform: translatey(-3%);
+}
+.card-title{
+  line-height: 1.5;
+  color: #6a6a6a;
+}
+.card-text{
+  margin-bottom: 15px;
 }
 /*----productos*/
 .card-group{
-  margin-top: 20px;
-  padding: 20px;
+  margin-top: 30px;
+  padding: 10px;
   gap: 10px;
   text-align: center;
  position: center;
-}
-.card-img-top{
-  width: 75%;
 }
 
 article img{
@@ -357,3 +360,4 @@ footer{
     transform: translateX(25%);
   }
 }
+/*-----------CARUSEL-------*/
