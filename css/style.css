@@ -3,129 +3,63 @@
 *{
   padding: 0;
   margin: 0;
-}
-
-a{
   text-decoration: none;
 }
-h1{
-  font-family:'Courier New', Courier, monospace;
-  font-size: 3em;
-  margin: 20px;
+h1, h2{
   text-align: center;
+  font-family: 'Roboto';
+  font-size: 2em;
+  padding: 10px;
 }
-
+h6{
+  text-align: center;
+  font-size: 2em;
+  padding: 10px;
+}
 .tittle{
   text-align: center;
   font-size: 1em;
   background-color: black;
   color: white;
-  padding: 5px;
-  
-
+  padding: 10px;
 }
+
 /*    Navbar   */
 .bg-orange{
+  width: 100%;
   background-color:#1c92d2
 }
 .nav-item{
   font-family:'Roboto', sans-serif;
   font-size: 1.8em;
 }
-
-/* Navbar---*/
-
-/*  main  */
-.gallery-container {
-  display:grid;
-  grid-template-areas:
-  "header nav"
-  "main section"
-  "aside aside"
-  "footer footer";
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto);
-  gap: 10px;
-  padding: 10px;
-  justify-content: center;
-}
-nav{
-  grid-area: nav;
-  background-color:y
-  /* height: 500px; */
-}
-header{
-  grid-area: header;
-  background-color:#fff
-}
-main{
-  grid-area: main;
- 
-}
-section{
-  background-color: #fff;
-}
-aside{
-  grid-area: aside;
-  background-color: #fff;
-}
-footer{
-  grid-area: footer; 
-}
-header{
-  display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
-  align-items: center;
-  background: linear-gradient(45deg, #03ceca);
-  padding: 5px;
-  
-}
-header nav ul{
- display: flex;
- margin: 10px;
- margin-bottom:10px;
-}
-header nav ul li{
-  list-style: none;
-  margin: 5px;
-}
-.photo {
-  gap: 10px;
-  text-align: center;
-}
-.photo img{
-  min-height: 900px;
-  max-height: 900px;
-  max-width: 100%;
-  object-fit: cover;
-}
 nav ul li a{
   font-size: 2rem;
   text-decoration: none;
 }
 nav ul li a:hover{
- background-color:orange;
- 
+  background-color:rgba(212, 93, 248, 0.986)
 }
+ 
+
+/* Navbar---*/
 /* Main card*/
 .card-group{
-  width: 90%;
   justify-content: center;
-margin: 20px;
-padding: 20px;
-gap: 10px;
-font-size: 1.8rem;
-border-radius: 6px;
+ margin: 20px;
+ padding: 20px;
+ gap: 10px;
+ font-size: 1.8rem;
+ border-radius: 6px;
 }
 .card-img-top{
-width: 100%;
-border-radius: 6px;
-overflow: hidden;
-background: #fff;
-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0,2);
-cursor: default;
-transition: all 400ms ease;
+ width: 100%;
+ border-radius: 6px;
+ overflow: hidden;
+ background: #fff;
+ box-shadow: 0px 1px 10px rgba(0, 0, 0, 0,2);
+ cursor: default;
+ transition: all 400ms ease;
 }
 .card-img-top:hover{
   box-shadow:  5px 5px 20px rgba(0, 0, 0, 0);
@@ -139,137 +73,39 @@ transition: all 400ms ease;
   margin-bottom: 15px;
 }
 /*----productos*/
-.card-group{
-  margin-top: 30px;
-  padding: 10px;
-  gap: 10px;
-  text-align: center;
- position: center;
+.card{
+  border: none;
+  outline: none;
+  background-color:#fff;
+  border-radius: 20px;
+  transition: transform .3s;
 }
-
-article img{
-  width: 100%;
-  padding: 10px;
- 
+.card:hover{
+  transform: translateY(-15px);
+  transition: transform .3s;
 }
-/*-------contacto-----*/
+.text1{
+  font-size: 20px;
+  color:black
+}
+.cost span{
+  color: #fb3531;
+  font-weight: bold;
+  font-size: 20px;
+}
+.Adidas{
+  background: #dc3545;
+}
 .bg-tnb{
   background-color:#5cc0f7
 }
-
- /* selectores de clase */
-
-.container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.txtIndex{
-  /* ancho del texto */
- text-align: center;
-  width: 200px;
-  color: white;
-}
-.bg-white{
-  background-color: white;
-  border: solid 5px black;
-}
- .pie__img--xl{
- text-align:center;
- }
-.pie{
-  background-color:black;
-  text-align: center;
-  padding: 10px 0;
-  color: white;
-}
-.pie__icon--sm{
-   width: 30px;
-}
-.pie__titulo--md{
- font-size: 1em;
-}
 footer{
   width: 100%;
- 
-}
-footer a{
-  margin:5px;
-  padding: 5px 0;
-}
-footer:hover{
-  background-color:aqua;
-  
- }
-form {
-  width: 450px;
-  margin: auto;
-  background: rgb(0, 0, 0, 0.3);
-  padding: 10px 20px;
-  box-sizing: border-box;
-  margin-top: 20px;
-  border-radius: 7px;
-}
-form h2 {
-  color:black;
-  text-align: center;
-  margin: 0;
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-input, textarea {
-width: 100%;
-margin-bottom: 20px;
-padding: 7px;
-box-sizing: border-box;
-font-size: 17px;
-border: none;
-}
-textarea {
-  min-height: 100px;
-  max-height: 200px;
-  max-width: 100%;
-}
-#boton {
-  background: #31384a;
-  color: #fff;
   padding: 20px;
+  background-color:#1c92d2;
 }
-#boton:hover {
-  cursor: pointer;
-}
-figure img{
-  min-height: 300px;
-  max-height: 300px;
-  max-width: 100%;
-}
-aside{
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-aside div{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-aside div img{
-  width: 300px;
-  height: auto;
-  margin: 10px;
-  padding: 10px;
-}
-footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
+
 /*  */
 .slider{
   width: 100%;
@@ -289,75 +125,8 @@ footer{
   50% {margin-left: -200%;}
   70% {margin-left: -200%;}
 }
-/* grid*/
-/* se aplica en productos*/
-#gridProductos{
-  display:grid;
-  grid-template-columns:repeat(3, auto);
-  grid-template-rows:repeat(2,auto);
-  gap: 10px;
-  padding: 10px;
-  justify-content: center;
-}
-/* se aplica en promociones */
-#gridPromociones {
-  display:grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto);
-  gap: 10px;
-  padding: 10px;
-  justify-content: center;
-}
-/* se aplica a main */
-.gridMain{
-  display: grid;
-  grid-template-areas:
-  "header"
-  "main"
-  "footer";
-  gap:10px;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-}
-header{
-  grid-area: header;
-}
-main{
-  grid-area: main;
-}
-footer{
-  grid-area: footer;
-}
-footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.main__bg {
-  background-image: -moz-linear-gradient(-60deg, #ff87c1 50%, 
-  #8be9d2 50%);
-  animation: slide 3s ease-in-out infinite alternate;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: -50%;
-  right: -50%;
-  opacity: 0.5;
-  z-index: -1;
-}
-.layer1 {
-  animation-direction: alternate-reverse;
-  animation-duration: 4s;
-}
-.layer2 {
-  animation-duration: 5s;
-}
-@keyframes slide {
-  0% {
-    transform: translateX(-25%);
-  }
-  100% {
-    transform: translateX(25%);
-  }
-}
-/*-----------CARUSEL-------*/
+
+
+
+
+
