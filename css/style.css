@@ -34,7 +34,7 @@ h6{
   font-size: 1.8em;
 }
 nav ul li a{
-  font-size: 2rem;
+  font-size: 2em;
   text-decoration: none;
 }
 nav ul li a:hover{
@@ -71,6 +71,11 @@ nav ul li a:hover{
 }
 .card-text{
   margin-bottom: 15px;
+}
+.texto{
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 /*----productos*/
 .card{

@@ -1,0 +1,26 @@
+{
+  "name": "bauti",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "sass --watch scss/main.scss  css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RocioRuizDiaz/REPO_1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RocioRuizDiaz/REPO_1/issues"
+  },
+  "homepage": "https://github.com/RocioRuizDiaz/REPO_1#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "sass": "^1.54.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
