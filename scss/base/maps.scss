@@ -1,0 +1,19 @@
+$gama:(
+        'uno':#2596be,
+        'dos':#3ba1c5,
+        'tres':#51abcb,
+        'cuatro':#66b6d2,
+        'cinco':#7cc0d8,
+        'seis':#1c92d2,
+        'siete':#a8d5e5,
+        'ocho':#bee0ec,
+        'nueve':#e9f5f9,
+        'diez':#1a6985,
+        'once':#2187ab, 
+        'doce':#22acc3,
+        'trece':#bd286c,
+    );
+
+    .bg-blue{
+        background-color: map-get($map: $gama, $key: 'seis');
+    }

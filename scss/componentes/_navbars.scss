@@ -1,0 +1,60 @@
+@import "../base/maps.scss";
+
+.navbar{
+    background-color:map-get($map:$gama, $key: 'seis');
+    display: flex;
+    justify-content: center;
+    flex-direction: auto;
+    justify-content: space-between;
+    img{
+        width: 150px;
+    }
+    ul{
+        display: flex;
+        margin-bottom: 1rem;
+        margin-top: auto;
+        li{
+            list-style: none;
+            margin-right: 10px;
+            a{
+                color: $textColors;
+                font-family: $secundarFont;
+                font-size: $nav_a-size;
+                padding: 10px;
+                margin-bottom: 30px;
+                text-decoration: none;
+                border-radius: 20px;
+                
+                &:hover{
+                    cursor: pointer;
+                    color: rgba(241, 234, 232, 0.856);
+                }
+            }
+        }
+    }
+}
+
+   
+.btn-bet{
+    width: 100px;
+    height: 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        color: $textColors;
+        cursor: pointer;
+    }
+}
+.btn-brand{
+    @extend .btn-bet;
+    border-radius: 6px;
+
+}
+.navbar-toggler{
+    background-color: map-get($map: $gama, $key: 'trece');
+    height: 40px;
+    width: 50px;
+   
+}

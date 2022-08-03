@@ -1,0 +1,15 @@
+@mixin display ($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction:$direction;
+}
+
+ @mixin tittle ($fontSize, $lineHeight, $color){
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    color: $color;
+    padding: 10px 20px;
+ } 
+ 
+

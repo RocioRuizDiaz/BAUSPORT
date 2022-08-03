@@ -1,0 +1,27 @@
+%mainContainer{
+    flex-wrap: wrap;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color:white;
+    border-radius: 20px;
+    width: 100%;
+    height: max-content;
+}
+%btn-bet{
+    width: $w-100;
+    height: 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: map-get($map: $gama, $key: 'tres' );
+    &:hover{
+        color: $textColors;
+        cursor: pointer;
+    }
+}
+.btn-extend{
+    @extend .btn-bet;
+    border-radius: 6px;
+}

@@ -1,0 +1,31 @@
+
+@media (max-width:480px){
+    
+    nav ul li a{
+        font-size: $nav_a-size;
+    }
+    .flex {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    .logo{
+      width: 50px;
+    }
+    form{
+      width: 100%;
+    }
+  }
+  /* tablet */
+  @media(min-width:481px) and (max-width:768px){
+    
+    nav ul li a{
+        font-size: $nav_a-size;
+    }
+    .card figure img{
+      width: 100%;
+    }
+    .logo{
+      width: 100px;
+    }
+   
+  }

@@ -25,23 +25,46 @@ h6{
 }
 
 /*    Navbar   */
-.bg-orange{
-  width: 100%;
-  background-color:#1c92d2
+
+div nav{
+  text-align: center;
+  grid-area: nav;
+  margin: 10px;
 }
-.nav-item{
-  font-family:'Roboto', sans-serif;
-  font-size: 1.8em;
+div nav ul{
+  position: sticky;
+  top: 0;
 }
-nav ul li a{
-  font-size: 2em;
-  text-decoration: none;
+div nav ul li a{
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem !important;
 }
-nav ul li a:hover{
-  background-color:rgba(212, 93, 248, 0.986)
+.active-bg{
+  background-color: black !important;
+}
+div nav ul li a:hover{
+  font-weight: 900;
+}
+/* --------------- header ------------ */
+div header{
+  grid-area: header;
+  height: max-content;
+  background: linear-gradient(45deg, #1c92d2, #74d3e6);
+  border: solid 5px rgb(0, 255, 221);
+  text-align: center;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.logo{
+  width: 20%;
+}
+.logo:hover{
+  animation: rotate-scale-up 0.65s linear both;
 }
  
-
 /* Navbar---*/
 /* Main card*/
 .card-group{

@@ -1,0 +1,12 @@
+@import "../base/variables";
+
+div header{
+    grid-area: header;
+    height: max-content;
+    background: $navbar-color;
+    border: solid 5px rgb(0, 255, 221);
+    text-align: center;
+    border-radius: 20px;
+   
+   
+}

@@ -1,7 +1,13 @@
 {
-  "name": "bauti",
+  "name": "repo_1",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "sass": "^1.54.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass",
@@ -16,11 +22,5 @@
   "bugs": {
     "url": "https://github.com/RocioRuizDiaz/REPO_1/issues"
   },
-  "homepage": "https://github.com/RocioRuizDiaz/REPO_1#readme",
-  "dependencies": {
-    "bootstrap": "^5.2.0",
-    "sass": "^1.54.0"
-  },
-  "devDependencies": {},
-  "description": ""
+  "homepage": "https://github.com/RocioRuizDiaz/REPO_1#readme"
 }
