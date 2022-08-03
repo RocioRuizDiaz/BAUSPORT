@@ -12,7 +12,6 @@
     ul{
         display: flex;
         margin-bottom: 1rem;
-        margin-top: auto;
         li{
             list-style: none;
             margin-right: 10px;
@@ -24,7 +23,7 @@
                 margin-bottom: 30px;
                 text-decoration: none;
                 border-radius: 20px;
-                
+            
                 &:hover{
                     cursor: pointer;
                     color: rgba(241, 234, 232, 0.856);

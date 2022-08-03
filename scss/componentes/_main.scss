@@ -6,7 +6,6 @@
   $w-100: 100%;
   margin: auto;
   gap: 10px;
-  @include tittle(1.8em, 1.4em, $color:$textColors);
   .card {
     $w-100: 100%;
     margin: 20px;
@@ -53,6 +52,7 @@ h1 {
   padding: 10px;
   flex-wrap: nowrap;
   gap: 20px;
+  font-size: $p-size;
       .flex img{
       width: $w-100;
     }
