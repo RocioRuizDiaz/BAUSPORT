@@ -21,7 +21,7 @@
      margin-bottom: 15px;
      $textColors: rgb(8, 7, 7);
       
-            
+        
     }
 
       
@@ -34,8 +34,7 @@
    transform: translateY(-3%);
 }
 .contenido-card {
-   text-align: center;
-    
+   text-align: center; 
 }
 
 h1 {
@@ -53,9 +52,7 @@ h1 {
   font-size: $p-size;
       .card img{
       width: $w-100;
-      .figure{
-        margin: none;
-      }
+      
     }
 }
 .row {
@@ -74,8 +71,11 @@ h1 {
 .producto{
   @include display (center, center, column);
   width: $w-70;
-
+  h5{
+    font-size: $P-tittle
+  }
 }
+
   .tittle2{
     @include tittle(center,center,column);
     font-size: $secundarFont,$h1-size;
@@ -87,6 +87,19 @@ h1 {
     }
     }
     
+.destacado{
+      @extend %btn-bet;
+        width:$w-100;
+        gap: 20px;
+       
+ }
+h2{
+  text-align: center;
+  font-size: $secundarFont,$fontSize;
+  padding: 10px;
+        
+}
+      
   /* PROCIONES */
 
   .promo{
@@ -100,6 +113,7 @@ h1 {
   /* MARCAS */
   #gridMain{
     @extend %mainContainer;
+    text-align: center;
     img{
     border-radius: 10px;
       &:hover{
@@ -107,7 +121,13 @@ h1 {
       }
     }
   }
-
+.marca{
+  @include display (center, center, block);
+  width: $w-100;
+  padding: 20px;
+  gap: 10px;
+  
+}
   /* CONTACTOS */
 
   .form{
@@ -115,4 +135,13 @@ h1 {
     text-align: center;
     justify-content: center;
     background-color: map-get($map: $gama, $key:'siete' ) ;
+  }
+  .style {
+    @extend %btn-bett;
+      .card{
+        width:$w-100;
+        gap: 20px;
+      }
+        
+       
   }

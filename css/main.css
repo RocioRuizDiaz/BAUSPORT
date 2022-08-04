@@ -37,7 +37,7 @@
   color: rgba(241, 234, 232, 0.856);
 }
 
-.btn-bet, .btn-extend, .btn-brand {
+.btn-bet, .btn-brand {
   width: 100px;
   height: 30px;
   border: none;
@@ -45,7 +45,7 @@
   justify-content: center;
   align-items: center;
 }
-.btn-bet:hover, .btn-extend:hover, .btn-brand:hover {
+.btn-bet:hover, .btn-brand:hover {
   color: rgb(8, 7, 7);
   cursor: pointer;
 }
@@ -72,30 +72,40 @@ div header {
 #gridMain, .promo {
   flex-wrap: wrap;
   padding: 15px;
+  justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px;
   background-color: white;
   border-radius: 20px;
   width: 100%;
-  height: max-content;
 }
 
-.card-btn {
+.destacado, .card-btn {
   width: 100%;
-  height: 10px;
-  border: none;
+  padding: 10px;
   display: flex;
+  gap: 10px;
   justify-content: center;
   align-items: center;
-  background-color: #51abcb;
+  background-color: #bd286c;
 }
-.card-btn:hover {
+.destacado:hover, .card-btn:hover {
   color: rgb(8, 7, 7);
   cursor: pointer;
 }
 
-.btn-extend {
-  border-radius: 6px;
+.style {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #252525;
+}
+.style:hover {
+  color: rgb(8, 7, 7);
+  cursor: pointer;
 }
 
 /*Cards*/
@@ -145,9 +155,6 @@ h1 {
 .flex .card img {
   width: 100%;
 }
-.flex .card img .figure {
-  margin: none;
-}
 
 .row {
   display: flex;
@@ -165,6 +172,9 @@ h1 {
   flex-direction: column;
   width: 70%;
 }
+.producto h5 {
+  font-size: 1.8rem;
+}
 
 .tittle2 {
   font-size: center;
@@ -178,17 +188,41 @@ h1 {
   background-color: #51abcb;
 }
 
+.destacado {
+  width: 100%;
+  gap: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: "Open Sans", sans-serif, 3em;
+  padding: 10px;
+}
+
 /* PROCIONES */
 .promo img {
   border-radius: 5px;
 }
 
 /* MARCAS */
+#gridMain {
+  text-align: center;
+}
 #gridMain img {
   border-radius: 10px;
 }
 #gridMain img:hover {
   cursor: pointer;
+}
+
+.marca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: block;
+  width: 100%;
+  padding: 20px;
+  gap: 10px;
 }
 
 /* CONTACTOS */
@@ -197,6 +231,11 @@ h1 {
   text-align: center;
   justify-content: center;
   background-color: #a8d5e5;
+}
+
+.style .card {
+  width: 100%;
+  gap: 20px;
 }
 
 footer {

@@ -1,27 +1,41 @@
 %mainContainer{
     flex-wrap: wrap;
     padding: 15px;
+    justify-content: center;
     margin-top: 30px;
     margin-bottom: 30px;
     background-color:white;
     border-radius: 20px;
     width: 100%;
-    height: max-content;
+    
 }
 %btn-bet{
     width: $w-100;
-    height: 10px;
-    border: none;
+    padding: 10px;
     display: flex;
+    gap: 10px;
     justify-content: center;
     align-items: center;
-    background-color: map-get($map: $gama, $key: 'tres' );
+    background-color: map-get($map: $gama, $key: 'trece' );
     &:hover{
         color: $textColors;
         cursor: pointer;
     }
 }
-.btn-extend{
+%btn-bett{
+    width: $w-100;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: map-get($map: $gama, $key: 'catorce' );
+    &:hover{
+        color: $textColors;
+        cursor: pointer;
+    }
+}
+%btn-extend{
     @extend .btn-bet;
     border-radius: 6px;
 }
