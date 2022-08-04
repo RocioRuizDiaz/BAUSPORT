@@ -5,7 +5,9 @@
 .contenido-card .card{
   $w-100: 100%;
   margin: auto;
+  text-align: center;
   gap: 10px;
+  
   .card {
     $w-100: 100%;
     margin: 20px;
@@ -14,6 +16,7 @@
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     transition: all 400ms ease-out;
     cursor: default;
+    
     h3 {
      margin-bottom: 15px;
      $textColors: rgb(8, 7, 7);
@@ -27,15 +30,10 @@
 }
 
 .card:hover {
-   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
    transform: translateY(-3%);
 }
-.card img {
-   width: $w-100;
-   
-}
 .contenido-card {
-   padding: 15px;
    text-align: center;
     
 }
@@ -49,36 +47,45 @@ h1 {
 .flex{
   display:flex;
   margin: 10px;
-  padding: 10px;
+  border-radius: 20px;
   flex-wrap: nowrap;
   gap: 20px;
   font-size: $p-size;
-      .flex img{
+      .card img{
       width: $w-100;
+      .figure{
+        margin: none;
+      }
     }
 }
-
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   
 }
+/*CARD1 */
+
+
+
+
+ /* INICIO */
 /* PRODUCTOS */
 .producto{
   @include display (center, center, column);
-  background-color: map-get($map: $gama, $key: 'seis' );
-  border: solid 2px;
+  width: $w-70;
 
 }
-  
+  .tittle2{
+    @include tittle(center,center,column);
+    font-size: $secundarFont,$h1-size;
+  }
 .card-btn{
     @extend %btn-bet;
     button{
       background-color: map-get($map: $gama, $key:'tres');
     }
     }
-  
     
   /* PROCIONES */
 
@@ -99,4 +106,13 @@ h1 {
         cursor: pointer;
       }
     }
+  }
+
+  /* CONTACTOS */
+
+  .form{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: map-get($map: $gama, $key:'siete' ) ;
   }
