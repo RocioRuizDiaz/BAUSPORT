@@ -69,7 +69,7 @@ div header {
   border-radius: 20px;
 }
 
-#gridMain, .promo {
+.gridMain {
   flex-wrap: wrap;
   padding: 15px;
   justify-content: center;
@@ -96,7 +96,7 @@ div header {
 
 .style {
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -139,7 +139,7 @@ h1 {
   font-size: 2em;
   line-height: 1.4em;
   color: rgb(8, 7, 7);
-  padding: 10px 20px;
+  padding: 20px 20px;
   text-align: center;
   justify-content: center;
 }
@@ -162,7 +162,6 @@ h1 {
   justify-content: center;
 }
 
-/*CARD1 */
 /* INICIO */
 /* PRODUCTOS */
 .producto {
@@ -180,7 +179,7 @@ h1 {
   font-size: center;
   line-height: center;
   color: column;
-  padding: 10px 20px;
+  padding: 20px 20px;
   font-size: "Open Sans", sans-serif, 4em;
 }
 
@@ -200,29 +199,56 @@ h2 {
 }
 
 /* PROCIONES */
+.contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 10px;
+}
+
+.flexx img {
+  width: 100%;
+  max-width: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
 .promo img {
   border-radius: 5px;
 }
 
+/*card*/
+/*card*/
 /* MARCAS */
-#gridMain {
+.gridMain {
   text-align: center;
 }
-#gridMain img {
+.gridMain img {
+  padding: 10px;
   border-radius: 10px;
 }
-#gridMain img:hover {
+.gridMain img:hover {
   cursor: pointer;
 }
 
 .marca {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: block;
   width: 100%;
-  padding: 20px;
-  gap: 10px;
+  padding: 30px;
+  gap: 20px;
+}
+.marca .card-body {
+  padding: 5px;
+}
+.marca .card-body .card-text {
+  font-size: 1.5em;
+  line-height: 1.8em;
+}
+
+.titulo h1 {
+  font-size: 3em;
+  margin: 20px;
+  background-color: rgba(245, 94, 145, 0.9333333333);
 }
 
 /* CONTACTOS */
@@ -254,6 +280,10 @@ footer {
     width: 100%;
     flex-wrap: wrap;
   }
+  .promo {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .logo {
     width: 50px;
   }
@@ -268,6 +298,9 @@ footer {
   }
   .card figure img {
     width: 100%;
+  }
+  .promo {
+    flex-wrap: wrap;
   }
   .logo {
     width: 100px;
@@ -321,6 +354,45 @@ footer {
 }
 .bg-blue {
   background-color: #1c92d2;
+}
+
+.gridMain {
+  flex-wrap: wrap;
+  padding: 15px;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.card-btn, .destacado {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #bd286c;
+}
+.card-btn:hover, .destacado:hover {
+  color: rgb(8, 7, 7);
+  cursor: pointer;
+}
+
+.style {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #252525;
+}
+.style:hover {
+  color: rgb(8, 7, 7);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */
