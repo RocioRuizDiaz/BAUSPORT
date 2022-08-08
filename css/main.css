@@ -108,58 +108,78 @@ div header {
   cursor: pointer;
 }
 
+/* inicio */
 /*Cards*/
-.contenido-card .card {
-  margin: auto;
+section {
+  width: 80%;
+  margin: 80px auto;
+}
+section .titulo {
   text-align: center;
-  gap: 10px;
+  font-size: 1em;
 }
-.contenido-card .card .card {
-  margin: 20px;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  transition: all 400ms ease-out;
-  cursor: default;
+section .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
 }
-.contenido-card .card .card h3 {
-  margin-bottom: 15px;
+section .row .row .col img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.card:hover {
-  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+.destacados {
+  margin-top: 20px;
+}
+
+.card-body {
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+.contenedorr {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  background-color: #bee0ec;
+}
+
+.cardd {
+  width: 100%;
+  margin: 10px;
+  border-radius: 6px;
+  cursor: default;
+  transition: all 400ms ease;
+  text-align: center;
+  justify-content: center;
+}
+
+.cardd:hover {
   transform: translateY(-3%);
 }
 
-.contenido-card {
-  text-align: center;
-}
-
-h1 {
-  font-size: 2em;
-  line-height: 1.4em;
-  color: rgb(8, 7, 7);
-  padding: 20px 20px;
-  text-align: center;
-  justify-content: center;
-}
-
-.flex {
-  display: flex;
-  margin: 10px;
-  border-radius: 20px;
-  flex-wrap: nowrap;
-  gap: 20px;
-  font-size: 2em;
-}
-.flex .card img {
+.cardd img {
   width: 100%;
+  height: 250px;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.conten {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.conten a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  background-color: #22acc3;
+  border-radius: 15px;
 }
 
 /* INICIO */
@@ -172,15 +192,20 @@ h1 {
   width: 70%;
 }
 .producto h5 {
-  font-size: 1.8rem;
+  font-size: 1.5em;
 }
 
 .tittle2 {
-  font-size: center;
-  line-height: center;
-  color: column;
-  padding: 20px 20px;
-  font-size: "Open Sans", sans-serif, 4em;
+  padding: 10px;
+  font-size: "Open Sans", sans-serif, 2.5em;
+  text-align: center;
+}
+
+.card-group .card {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 10px;
+  gap: 20px;
 }
 
 .card-btn button {
@@ -189,12 +214,13 @@ h1 {
 
 .destacado {
   width: 100%;
+  border-radius: 10px;
   gap: 20px;
 }
 
 h2 {
   text-align: center;
-  font-size: "Open Sans", sans-serif, 3em;
+  font-size: "Open Sans", sans-serif, 1.8em;
   padding: 10px;
 }
 
@@ -218,8 +244,6 @@ h2 {
   border-radius: 5px;
 }
 
-/*card*/
-/*card*/
 /* MARCAS */
 .gridMain {
   text-align: center;
@@ -230,23 +254,24 @@ h2 {
 }
 .gridMain img:hover {
   cursor: pointer;
+  color: #000;
 }
 
 .marca {
   width: 100%;
-  padding: 30px;
+  padding: 10px;
   gap: 20px;
 }
 .marca .card-body {
   padding: 5px;
 }
 .marca .card-body .card-text {
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 1.8em;
 }
 
 .titulo h1 {
-  font-size: 3em;
+  text-align: center;
   margin: 20px;
   background-color: rgba(245, 94, 145, 0.9333333333);
 }
@@ -272,40 +297,6 @@ footer {
   background-color: #1c92d2;
 }
 
-@media (max-width: 480px) {
-  nav ul li a {
-    font-size: 1.8em;
-  }
-  .flex {
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  .promo {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .logo {
-    width: 50px;
-  }
-  form {
-    width: 100%;
-  }
-}
-/* tablet */
-@media (min-width: 481px) and (max-width: 768px) {
-  nav ul li a {
-    font-size: 1.8em;
-  }
-  .card figure img {
-    width: 100%;
-  }
-  .promo {
-    flex-wrap: wrap;
-  }
-  .logo {
-    width: 100px;
-  }
-}
 .slider {
   width: 100%;
   margin: auto;
@@ -332,6 +323,17 @@ footer {
   object-fit: cover;
 }
 
+@keyframes rotate-scale-up {
+  0% {
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    transform: scale(1) rotateZ(360deg);
+  }
+}
 @keyframes cambio {
   0% {
     margin-left: 0;
@@ -393,6 +395,61 @@ footer {
 .style:hover {
   color: rgb(8, 7, 7);
   cursor: pointer;
+}
+
+/*mobile device */
+@media (max-width: 480px) {
+  nav ul li a {
+    font-size: 1.8em;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img {
+    width: 200px;
+    height: 200px;
+  }
+  .promo {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card-body {
+    font-size: 1.5em;
+  }
+  .logo {
+    width: 20px;
+  }
+  form {
+    width: 100%;
+  }
+}
+/* tablet */
+@media (min-width: 618px) and (max-width: 768px) {
+  .img {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  .promo {
+    flex-wrap: wrap;
+  }
+  .logo {
+    width: 20px;
+  }
+}
+/* Desktop */
+@media (min-width: 768px) {
+  .image {
+    height: 400px;
+    width: 400px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
