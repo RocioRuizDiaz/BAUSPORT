@@ -111,7 +111,7 @@ div header {
 /* inicio */
 /*Cards*/
 section {
-  width: 80%;
+  padding: 20px;
   margin: 80px auto;
 }
 section .titulo {
@@ -120,9 +120,7 @@ section .titulo {
 }
 section .row {
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 100%;
   margin-top: 40px;
 }
 section .row .row .col img {
@@ -143,13 +141,14 @@ section .row .row .col img {
 .contenedorr {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   padding: 10px;
   background-color: #bee0ec;
 }
 
 .cardd {
-  width: 100%;
   margin: 10px;
   border-radius: 6px;
   cursor: default;
@@ -189,7 +188,7 @@ section .row .row .col img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 70%;
+  width: 100%;
 }
 .producto h5 {
   font-size: 1.5em;
@@ -203,7 +202,7 @@ section .row .row .col img {
 
 .card-group .card {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin: 10px;
   gap: 20px;
 }
@@ -216,6 +215,7 @@ section .row .row .col img {
   width: 100%;
   border-radius: 10px;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 h2 {
@@ -402,6 +402,12 @@ footer {
   nav ul li a {
     font-size: 1.8em;
   }
+  .contenedorr {
+    flex-wrap: wrap;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
   .flex {
     display: flex;
     flex-direction: column;
@@ -427,11 +433,14 @@ footer {
   }
 }
 /* tablet */
-@media (min-width: 618px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .img {
     width: 300px;
     height: 300px;
     display: flex;
+    flex-wrap: wrap;
+  }
+  .container {
     flex-wrap: wrap;
   }
   h1 {

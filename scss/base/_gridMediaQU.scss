@@ -4,6 +4,12 @@
     nav ul li a{
         font-size: $nav_a-size;
     }
+    .contenedorr{
+      flex-wrap: wrap;
+    }
+    .container{
+      flex-wrap: wrap;
+    }
     .flex {
       display: flex;
       flex-direction: column;
@@ -30,12 +36,15 @@
     }
   }
   /* tablet */
-@media(min-width:618px) and (max-width:768px){
+@media(min-width:481px) and (max-width:768px){
   .img{
     width: 300px;
     height: 300px;
     display: flex;
     flex-wrap: wrap;
+    }
+    .container{
+      flex-wrap: wrap;
     }
     h1{
       font-size: $h1-size;
