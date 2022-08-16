@@ -3,41 +3,31 @@
 @import "../base/extends";
 
 /* inicio */
-/*Cards*/
-section{
-  padding: 20px;
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  }
+
+.novedadesSection{
+   padding: 20px;
   margin: 80px auto;
-    .titulo{
-  text-align: center;
-  font-size:$p;
-  }
-.row {
-   display: flex;
-   justify-content: center;
-   margin-top: 40px;
-   .row .col img{
-     width: 100%;
-     display: flex;
-     flex-direction: column;
-    }
-    
+  .containerProductos{
+    padding: 20px;
+    margin: 20px;
+  
   }
 }
-.destacados{
-  margin-top: 20px;
-}
+
+ 
 .card-body{
   font-size: $p-text;
   margin: 10px;
-}
-.contenedorr{
-  width: $w-100;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 10px;
-  background-color:map-get($map: $gama, $key: 'ocho');
 }
 .cardd{
   margin: 10px;
@@ -69,6 +59,12 @@ section{
   border-radius: 15px;
 }
 /* INICIO */
+ .search{
+  position: relative;
+  width: 250px;
+  background-color: #fff;
+  display: flex;
+ }
 
   /* PRODUCTOS */
 .producto{
@@ -84,12 +80,7 @@ padding: 10px;
 font-size: $secundarFont,$h1-size;
 text-align: center;
 }
-.card-group .card{
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px;
-  gap: 20px;
-}
+
 
 .card-btn{
   @extend %btn-bet;
@@ -113,13 +104,7 @@ text-align: center;
   }
         
     /* PROCIONES */
-.contenedor{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 20px;
-   gap: 10px;
-}
+
       
 .flexx img{    
   width: $w-100;
@@ -139,6 +124,7 @@ text-align: center;
 .gridMain{
    @extend %mainContainer;
      text-align: center;
+     
       img{
        padding: 10px;
        border-radius: 10px;

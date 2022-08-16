@@ -36,7 +36,7 @@
     }
 }
 %btn-extend{
-    @extend .btn-bet;
+    @extend %btn-bet;
     background-color: map-get($map: $gama, $key: 'catorce' );
     border-radius: 10px;
 }

@@ -37,29 +37,6 @@
   color: rgba(241, 234, 232, 0.856);
 }
 
-.btn-bet, .btn-brand {
-  width: 100px;
-  height: 30px;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.btn-bet:hover, .btn-brand:hover {
-  color: rgb(8, 7, 7);
-  cursor: pointer;
-}
-
-.btn-brand {
-  border-radius: 6px;
-}
-
-.navbar-toggler {
-  background-color: #bd286c;
-  height: 40px;
-  width: 50px;
-}
-
 div header {
   grid-area: header;
   height: max-content;
@@ -109,43 +86,30 @@ div header {
 }
 
 /* inicio */
-/*Cards*/
-section {
-  padding: 20px;
-  margin: 80px auto;
+* {
+  margin: 0;
+  padding: 0;
 }
-section .titulo {
-  text-align: center;
-  font-size: 1em;
-}
-section .row {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
-section .row .row .col img {
-  width: 100%;
+
+.container {
+  position: relative;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
 }
 
-.destacados {
-  margin-top: 20px;
+.novedadesSection {
+  padding: 20px;
+  margin: 80px auto;
+}
+.novedadesSection .containerProductos {
+  padding: 20px;
+  margin: 20px;
 }
 
 .card-body {
   font-size: 1.5em;
   margin: 10px;
-}
-
-.contenedorr {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 10px;
-  background-color: #bee0ec;
 }
 
 .cardd {
@@ -182,6 +146,13 @@ section .row .row .col img {
 }
 
 /* INICIO */
+.search {
+  position: relative;
+  width: 250px;
+  background-color: #fff;
+  display: flex;
+}
+
 /* PRODUCTOS */
 .producto {
   display: flex;
@@ -198,13 +169,6 @@ section .row .row .col img {
   padding: 10px;
   font-size: "Open Sans", sans-serif, 2.5em;
   text-align: center;
-}
-
-.card-group .card {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px;
-  gap: 20px;
 }
 
 .card-btn button {
@@ -225,14 +189,6 @@ h2 {
 }
 
 /* PROCIONES */
-.contenedor {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 20px;
-  gap: 10px;
-}
-
 .flexx img {
   width: 100%;
   max-width: 100%;

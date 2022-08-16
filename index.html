@@ -21,16 +21,15 @@
   <header>
    <nav class="navbar navbar-expand-lg ">
      <div class="container-fluid">
-       <a class="navbar-brand" href="./index.html">
+       <a class="navbar-brand active" href="./index.html">
         <img src="./img/logo.svg" alt="Logo, si accedo voy al inicio de mi sito, a la pagina inicio" class="w-100">
-      </a>
+        </a>
       <button class="navbar-toggler btn-bet" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link" href="./pages/productos.html">Productos</a>
           </li> 
@@ -51,8 +50,7 @@
         </div>
       </div>
      </nav>
-  </header>
-   <!----inicio carousel--->
+     <!----inicio carousel--->
    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -80,78 +78,57 @@
     </button>
    </div>
    <!---- fin carousel--->
+  </header>
    <!---main-->
-    <main >
-     <section class="descatados">
-        <div class="titulo">
-          <h1>MUST HAVE</h1>
-        </div> 
+   <section class="novedadesSection">
+      <main>
+        <h1 class="mt-2 text-center text sm-start text-md-center text-lg" >MUST HAVE</h1>
+        <section class="containerProductos">
          <!----inicio cards--->
-         <div class="row ">
-          <div class="col-sm-12 col-md-6 col-lg-3">
-            <img src="./img/des1.webp" class="card-img-top" alt="Botitas Jordan Air 3 Retro De Basket Para Hombre">
-            <div class="card-body">
-              <h4 class="card-title">BOTITAS JORDAN AIR 3 RETRO</h4>
-              <p class="card-text">$ 64.799</p>
+         <div class="row">
+           <article class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
+              <img src="./img/des1.webp" class="card-img-top" alt="Botitas Jordan Air 3 Retro De Basket Para Hombre">
+                <div class="card-body">
+                    <h4 class="card-title">BOTITAS JORDAN AIR 3 RETRO</h4>
+                    <p class="card-text">$ 64.799</p>
+                 </div>
             </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3">
+           </article>
+          <article class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
             <img src="./img/des2.webp" class="card-img-top" alt="Botitas Nike Lebron Xix De Basket Para Hombre">
             <div class="card-body">
               <h4 class="card-title">BOTITAS NIKE LEBRON XIX</h4>
               <p class="card-text">$ 64.799</p>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-3">
+          </article>
+          <article class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
             <img src="./img/des6.webp" class="card-img-top" alt="Zapatillas Fila Rush De Moda Para Mujer">
             <div class="card-body">
-              <h4 class="card-title">ZAPATILLAS FILA RUSH</h4>
+              <h4 class="card-title">BOTITAS JORDAN AIR 6 RETRO</h4>
               <p class="card-text">$ 20.990</p>
-              
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-3">
+          </article>
+          <article class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
             <img src="./img/des5.webp" class="card-img-top" alt="Botitas Jordan Air 12 Retro De Moda Para Hombre">
             <div class="card-body">
               <h4 class="card-title">BOTITAS JORDAN AIR 12 RETRO</h4>
               <p class="card-text">$ 64.799</p>
             </div>
           </div>
+          </article>
         </div>
-      </section>
-      <!----fin cards-->
-      <!----inicio flip card-->
-      <div class="contenedorr row">
-        <div class="col-sm-12 col-md-6 col-lg-3 cardd">
-          <figure>
-            <img src="./img/destacado/krosty.webp" alt=" Zapatillas edicion especial, inspiradas en krosty el payaso de los simpson">
-          </figure>
-          <div class="conten">
-            <h4>ADIDAS ZX INSPIRADAS EN KRUSTY BURGER</h4>
-            <a href="#">ver mas</a>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3 cardd">
-          <figure>
-            <img src="./img/destacado/minions.webp" alt="Zapatillas lanzamiento exclusivo insirada en los minions">
-          </figure>
-          <div class="conten">
-            <h4>MINIONS: RISE OF GRU BY REEBOK</h4>
-            <a href="#">ver mas</a>
-          </div>
-        </div>
-        <div class=" col-sm-12 col-md-6 col-lg-3 cardd">
-          <figure>
-            <img src="./img/destacado/monster.webp" alt="Zapatillas lanzamiento exclusivo, inspiradas en Monster inc">
-          </figure>
-          <div class="conten">
-            <h4>MIKE WAZOWSKI HACE UN CAMEO EN ADIDAS</h4>
-            <a href="#">ver mas</a>
-          </div>
-        </div>
-      </div>  
-   </main>
+      </div>
+      </section> 
+    </main>
+  </section>  
       <!----fin flip card-->
+     
       <!--footer-->
       <footer>
         <div class="container-fluid">
