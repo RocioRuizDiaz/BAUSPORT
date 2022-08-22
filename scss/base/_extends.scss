@@ -40,3 +40,11 @@
     background-color: map-get($map: $gama, $key: 'catorce' );
     border-radius: 10px;
 }
+
+%fontPrincipal{
+  font-size:$h1-size;
+  text-align: center;
+  justify-content: center;
+  margin: 20px;
+  padding-top: 10px;
+}

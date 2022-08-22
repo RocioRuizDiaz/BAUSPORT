@@ -11,25 +11,36 @@
     }
     ul{
         display: flex;
-        margin-bottom: 1rem;
+        margin: 0;
+        padding: 0;
         li{
             list-style: none;
-            margin-right: 10px;
+            margin:0 20px;
+            transition: 0.5s;
             a{
+                display: block;
                 color: $textColors;
                 font-family: $secundarFont;
                 font-size: $nav_a-size;
-                padding: 10px;
+                padding: 4px;
                 margin-bottom: 30px;
                 text-decoration: none;
                 border-radius: 20px;
             
                 &:hover{
                     cursor: pointer;
-                    color: rgba(241, 234, 232, 0.856);
+                    color: rgb(212, 76, 151);
                 }
             }
         }
     }
 }
 
+.nav-button{
+display: flex;
+align-items: center;
+justify-content:center;
+width: 64px;
+height: 64px;
+
+}

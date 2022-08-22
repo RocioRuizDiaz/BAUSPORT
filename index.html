@@ -18,14 +18,14 @@
 </head>
 <body>
   <!---utilizo navbar de bootstrap-->
-  <header>
+  <header >
    <nav class="navbar navbar-expand-lg ">
      <div class="container-fluid">
        <a class="navbar-brand active" href="./index.html">
         <img src="./img/logo.svg" alt="Logo, si accedo voy al inicio de mi sito, a la pagina inicio" class="w-100">
         </a>
       <button class="navbar-toggler btn-bet" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon "></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -80,55 +80,79 @@
    <!---- fin carousel--->
   </header>
    <!---main-->
-   <section class="novedadesSection">
-      <main>
-        <h1 class="mt-2 text-center text sm-start text-md-center text-lg" >MUST HAVE</h1>
-        <section class="containerProductos">
-         <!----inicio cards--->
-         <div class="row">
-           <article class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card">
-              <img src="./img/des1.webp" class="card-img-top" alt="Botitas Jordan Air 3 Retro De Basket Para Hombre">
-                <div class="card-body">
-                    <h4 class="card-title">BOTITAS JORDAN AIR 3 RETRO</h4>
-                    <p class="card-text">$ 64.799</p>
-                 </div>
-            </div>
-           </article>
-          <article class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card">
-            <img src="./img/des2.webp" class="card-img-top" alt="Botitas Nike Lebron Xix De Basket Para Hombre">
-            <div class="card-body">
-              <h4 class="card-title">BOTITAS NIKE LEBRON XIX</h4>
-              <p class="card-text">$ 64.799</p>
-            </div>
-          </div>
-          </article>
-          <article class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card">
-            <img src="./img/des6.webp" class="card-img-top" alt="Zapatillas Fila Rush De Moda Para Mujer">
-            <div class="card-body">
-              <h4 class="card-title">BOTITAS JORDAN AIR 6 RETRO</h4>
-              <p class="card-text">$ 20.990</p>
-            </div>
-          </div>
-          </article>
-          <article class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card">
-            <img src="./img/des5.webp" class="card-img-top" alt="Botitas Jordan Air 12 Retro De Moda Para Hombre">
-            <div class="card-body">
-              <h4 class="card-title">BOTITAS JORDAN AIR 12 RETRO</h4>
-              <p class="card-text">$ 64.799</p>
-            </div>
-          </div>
-          </article>
+  <main class="container">
+    <section id="galeria" class="container">
+      <div >
+        <h1>Destacados</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <img src="./img/destacado/monster.webp" alt="Mike Wazowski, el personaje más querido de Monsters Inc, sobre un clásico Stan Smith de color neutro con suela verde.  El monstruo de un solo ojo se coloca en el zapato varias veces con múltiples gestos">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <img src="./img/destacado/flip1.jpg" alt=" Nike Dunk High “Beijing” Este modelo viste de cuero color púrpura “Wine” en la parte superior y superposiciones en negro haciendo contraste junto con el Swoosh">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <img src="./img/destacado/minions.webp" alt="Instapump Fury de Minions. Amarillo y brillante con detalles asimétricos, ojos de Minion en los botones de la bomba">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <img src="./img/destacado/flip2.jpg" alt=" JORDAN 1 ARMY RUST SHADOW PATINA. Optando por un estilo más clásico, estas Jordan se visten de gris, negro y bronce. Los paneles de la puntera, el mediopié y el cuello, y la marca AIR JORDAN">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <img src="./img/destacado/flip-3.jpg" alt=" Nike Dunk Low “Venner”las Venner mantienen el esquema de colores: Venner, Autumn Green y Deep Purple en su composición">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <img src="./img/destacado/krosty.jpg" alt="Nuevas Adidas ZX C 1000 Inspiradas en Krusty Burger">
         </div>
       </div>
-      </section> 
-    </main>
-  </section>  
-      <!----fin flip card-->
-     
+    </section>
+    
+   <h2 >MUST HAVE</h2>
+     <!----inicio cards--->
+   <section class="containerProductos">
+      <div class="row">
+         <!----inicio cards--->
+        <article class="col-sm-12 col-md-6 col-lg-3">
+              <div class="card">
+                <img src="./img/des1.webp"alt="Botitas Jordan Air 3 Retro De Basket Para Hombre">
+                  <div class="card-body">
+                      <h3 class="card-title">Botitas Jordan Air 3 Retro</h3>
+                      <p class="text">$ 64.799</p>
+                  </div>
+              </div>
+        </article>
+        <article class="col-sm-12 col-md-6 col-lg-3">
+              <div class="card">
+                <img src="./img/des2.webp" alt="Botitas Nike Lebron Xix De Basket Para Hombre">
+                  <div class="card-body">
+                    <h3 class="card-title">Botitas Nike Lebron XIX</h3>
+                    <p class="text">$ 64.799</p>
+                  </div>
+              </div>
+        </article>
+        <article class="col-sm-12 col-md-6 col-lg-3">
+              <div class="card">
+                <img src="./img/des6.webp" alt="Zapatillas Fila Rush De Moda Para Mujer">
+                  <div class="card-body">
+                    <h3 class="card-title">Botitas Jordan Air 6 Retro </h3>
+                    <p class="text">$ 20.990</p>
+                  </div>
+              </div>
+        </article>
+        <article class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img src="./img/des5.webp"  alt="Botitas Jordan Air 12 Retro De Moda Para Hombre">
+              <div class="card-body">
+                  <h3 class="card-title">Botitas Jordan Air 12 Retro</h3>
+                  <p class="text">$ 64.799</p>
+              </div>
+          </div>
+        </article>
+       <!----fin  card-->  
+      </div>        
+    </section> 
+  </main> 
+      <!----fin  card-->
       <!--footer-->
       <footer>
         <div class="container-fluid">
