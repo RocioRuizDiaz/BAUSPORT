@@ -15,7 +15,8 @@
 }
 #galeria img{
   width: $w-100;
-  height: 300px;
+  height: 250px;
+  object-fit: cover;
 
 
    &:hover{
@@ -25,10 +26,10 @@
 
 .container{
   position: relative;
-  min-height: 100vh;
+  width: $w-100;
   display: flex;
   flex-direction: column;
-  background-color: map-get($map: $gama, $key: 'nueve');
+  
   }
 
 .containerProductos{
@@ -74,20 +75,17 @@ line-height: 1.2;
 
 .card-btn{
   @extend %btn-bet;
-    button{
-    background-color: map-get($map: $gama, $key:'tres');
-    
-  }
+   
 }
-      
-.destacado{
-  @extend %btn-bet;
-  width:$w-100;
-  border-radius: 10px;
-  gap: 20px;
-         flex-wrap: wrap;
-   }
-  h2{
+button{
+  background-color: map-get($map: $gama, $key:'tres');
+ 
+  a{
+    text-decoration: none;
+  }
+}     
+
+h2{
     text-align: center;
     font-size: $secundarFont,$fontSize;
     padding: 10px;       
@@ -101,6 +99,7 @@ line-height: 1.2;
     padding: 10px;
     margin: 20px;
     margin-top:  20px;
+    justify-content: center;
     .card-body{
       padding: 5px;
       .card-text{
@@ -136,3 +135,38 @@ line-height: 1.2;
          
     }
   
+    /*========Error 404====*/
+
+ .page_404{
+      padding: 40px 0;
+      background: #fff;
+      font-family: $secundarFont;
+
+        .page_404 img{
+        width: $w-100;
+      }
+    }
+    
+
+.four_zero_four_bg{
+      background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+      height: 400px;
+      background-position: center;
+ }
+
+ .four_zero_four_bg h1{
+      font-size: 80px;
+ 
+}
+.link_404{
+  color: #fff !important;
+  padding: 10px 20px;
+  background-color: map-get($map: $gama, $key: 'seis');
+  margin: 20px 0;
+  border-radius: 10px;
+  display: inline-block;
+}
+.contant_box_404{
+  margin-top: -50px;
+}
+    
