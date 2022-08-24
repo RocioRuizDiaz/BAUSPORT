@@ -44,7 +44,6 @@ h1{
 
 .card{
     text-align: center;
-    font-size: $p;
     margin-bottom: 15px;
   }
   .card-body{
@@ -84,15 +83,14 @@ h1{
 }
 p{
   font-size: $p-text;
-  margin-bottom: 2em;
-  color: rgba(31, 74, 218, 0.705);
+  margin-bottom: 0.5em;
+  color: rgba(14, 14, 15, 0.705);
   font-weight: 700;
 }
 h4{
   font-size: $p-text;
-      margin-bottom: 2em;
-      color: rgba(31, 74, 218, 0.705);
-      font-weight: 700;
+  margin-bottom: 0.5;
+  color: rgba(31, 74, 218, 0.705);
 }
 
 .card-btn{
