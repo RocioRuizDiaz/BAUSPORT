@@ -78,13 +78,18 @@ h1{
   @include display (center, center, column);
   width: $w-100;
   h3{
-   font-size: $p-text;
+   font-size: $p;
   }
   
 }
-
+p{
+  font-size: $p;
+  margin-bottom: 2em;
+  color: rgba(31, 74, 218, 0.705);
+  font-weight: 700;
+}
 h4{
-  font-size: $p-text;
+  font-size: $p;
       margin-bottom: 2em;
       color: rgba(31, 74, 218, 0.705);
       font-weight: 700;
