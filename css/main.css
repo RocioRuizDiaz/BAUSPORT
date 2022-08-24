@@ -134,6 +134,7 @@ h1 {
 .card {
   text-align: center;
   margin-bottom: 15px;
+  font-weight: 700;
 }
 
 .card-body {
@@ -143,7 +144,7 @@ h1 {
 .card-body h3 {
   margin: 0;
   margin-top: 1em;
-  font-size: 1em;
+  font-size: 1.5em;
   margin-bottom: 0.5em;
   margin-top: 2em;
 }
@@ -169,6 +170,7 @@ h1 {
 }
 .producto h3 {
   font-size: 1em;
+  font-weight: 700;
 }
 
 p {
@@ -182,6 +184,7 @@ h4 {
   font-size: 1em;
   margin-bottom: 0.5;
   color: rgba(31, 74, 218, 0.705);
+  font-weight: 700;
 }
 
 button {
