@@ -9,7 +9,6 @@
   background-color: #1c92d2;
   display: flex;
   justify-content: center;
-  flex-direction: auto;
   position: relative;
 }
 .navbar img {
@@ -126,18 +125,10 @@ h1 {
   flex-direction: column;
 }
 
-.containerProductos {
-  padding: 20px;
-  margin: 20px;
-  border-radius: 20 50px;
-}
-
-.card-body {
-  width: 100%;
-}
-
-.card:hover {
-  transform: translateY(-3%);
+.article-card-img {
+  border: 5px solid white;
+  border-radius: 30px;
+  margin-top: -53px;
 }
 
 .card {
@@ -146,11 +137,29 @@ h1 {
   margin-bottom: 15px;
 }
 
-.text {
+.card-body {
+  text-align: center;
+  line-height: 1.2;
+}
+.card-body h3 {
+  margin: 0;
+  margin-top: 1em;
   font-size: 1em;
+  margin-bottom: 0.5em;
+  margin-top: 2em;
+}
+.card-body p {
+  font-size: 1em;
+  margin-bottom: 2em;
+  color: rgba(31, 74, 218, 0.705);
+  font-weight: 700;
 }
 
-/* INICIO */
+.card :hover {
+  transform: translateY(-3%);
+}
+
+/* FIN INICIO */
 /* PRODUCTOS */
 .producto {
   display: flex;
@@ -161,12 +170,6 @@ h1 {
 }
 .producto h5 {
   font-size: 1em;
-}
-
-.card-body {
-  font-size: 1em;
-  text-align: center;
-  line-height: 1.2;
 }
 
 button {
@@ -189,7 +192,6 @@ h2 {
   padding: 10px;
   margin: 20px;
   margin-top: 20px;
-  justify-content: center;
 }
 .marca .card-body {
   padding: 5px;

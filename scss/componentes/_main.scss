@@ -23,7 +23,9 @@
     border: 5px solid #fff;
    }
 }
-
+h1{
+  @extend %fontPrincipal !optional;   
+}
 .container{
   position: relative;
   width: $w-100;
@@ -32,31 +34,45 @@
   
   }
 
-.containerProductos{
-    padding: 20px;
-    margin: 20px;
-    border-radius: 20 50px;
+.article-card-img{
+    border: 5px solid white;
+    border-radius: 30px;
+    margin-top: calc(-48px - 5px);
+    
     
   }
-h1{
-  @extend %fontPrincipal !optional;   
-}
-.card-body{
- width: $w-100;
-}
 
-.card:hover{
+.card{
+    text-align: center;
+    font-size: $p;
+    margin-bottom: 15px;
+  }
+  .card-body{
+  text-align: center;
+  line-height: 1.2;
+  
+    h3{
+    margin: 0;
+    margin-top: 1em;
+    font-size: $p-text;
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+   }
+    p{
+      font-size: $p-text;
+      margin-bottom: 2em;
+      color: rgba(31, 74, 218, 0.705);
+      font-weight: 700;
+    }
+  }
+.card :hover{
  transform: translateY(-3%);
 }
-.card{
-  text-align: center;
-  font-size: $p;
-  margin-bottom: 15px;
-}
-.text{
-  font-size: $p-text;
-}
-/* INICIO */
+
+
+/* FIN INICIO */
+
+
 /* PRODUCTOS */
 .producto{
   @include display (center, center, column);
@@ -66,11 +82,6 @@ h1{
   }
 }
 
-.card-body{
-font-size: $p-text ;
-text-align: center;
-line-height: 1.2;
-}
 
 
 .card-btn{
@@ -99,12 +110,12 @@ h2{
     padding: 10px;
     margin: 20px;
     margin-top:  20px;
-    justify-content: center;
+   
     .card-body{
       padding: 5px;
       .card-text{
-     font-size: $p;
-     line-height: 1.2em;
+      font-size: $p;
+      line-height: 1.2em;
     }
    } 
    
