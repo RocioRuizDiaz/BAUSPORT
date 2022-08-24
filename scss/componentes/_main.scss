@@ -77,12 +77,18 @@ h1{
 .producto{
   @include display (center, center, column);
   width: $w-100;
-  h5{
+  h3{
    font-size: $p-text;
   }
+  
 }
 
-
+h4{
+  font-size: $p-text;
+      margin-bottom: 2em;
+      color: rgba(31, 74, 218, 0.705);
+      font-weight: 700;
+}
 
 .card-btn{
   @extend %btn-bet;
