@@ -93,15 +93,14 @@ h1 {
   box-sizing: border-box;
 }
 
-#galeria .col-lg-3 {
-  margin: 0 !important;
-  padding: 10px;
-}
-
 #galeria img {
   width: 100%;
   height: 250px;
   object-fit: cover;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #galeria img:hover {
   border: 5px solid #fff;
@@ -129,13 +128,14 @@ h4 {
 
 .row {
   position: relative;
+  align-items: center;
   justify-content: center;
   height: min-content;
   padding: 20px;
-  margin: 20px 5;
+  margin: 20px;
 }
 
-.article-card-img {
+.card-card-img {
   border: 5px solid white;
   border-radius: 30px;
   margin-top: -53px;
@@ -189,7 +189,6 @@ button a {
 /* PROMOCIONES */
 .card {
   position: relative;
-  width: 300px;
   height: min-content;
   padding: 10px;
   justify-content: center;
@@ -205,7 +204,7 @@ button a {
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.8);
 }
 
-.card .figure-img {
+.card .card-img {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
@@ -213,7 +212,7 @@ button a {
 
 .card .card-img img {
   width: 100%;
-  height: 100%;
+  height: min-content;
   transition: 0.4s;
 }
 
@@ -396,7 +395,7 @@ button {
   background: #4b4b52;
 }
 
-.contenedor .style img:hover {
+.contenedor img:hover {
   border: 1px solid rgb(81, 218, 223);
   transform: rotate(-3deg);
 }
@@ -544,12 +543,24 @@ h1 {
 }
 
 /*mobile device */
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   nav ul li a {
     font-size: 1.5em;
   }
+  .carousel {
+    width: 100%;
+  }
+  #galeria img {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .card-body {
     font-size: 1em;
+    align-items: center;
   }
   .logo {
     width: 20px;
@@ -562,8 +573,13 @@ h1 {
     width: 100%;
   }
   .contenedor {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    margin: auto;
   }
   img {
     justify-content: center;
@@ -571,10 +587,21 @@ h1 {
   }
 }
 /* tablet */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 768px) {
   nav ul li a {
     font-size: 1.5em;
     width: 100%;
+  }
+  .carousel {
+    width: 100%;
+  }
+  #galeria img {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .card .card-img {
     width: 100%;

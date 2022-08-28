@@ -9,16 +9,14 @@
   box-sizing: border-box;
 }
 
-#galeria .col-lg-3{
-  margin: 0 !important;
-  padding: 10px;
-  
-}
 #galeria img{
   width: $w-100;
   height: 250px;
   object-fit: cover;
-
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
    &:hover{
     border: 5px solid #fff;
@@ -47,12 +45,13 @@ h4{
   }
 .row{
   position: relative;
+  align-items: center;
   justify-content: center;
   height: min-content;
   padding: 20px;
-  margin: 20px 5;
+  margin: 20px ;
 }
-.article-card-img{
+.card-card-img{
     border: 5px solid white;
     border-radius: 30px;
     margin-top: calc(-48px - 5px);
@@ -114,7 +113,6 @@ button{
     /* PROMOCIONES */
 .card {
   position: relative;
-  width: 300px;
   height: min-content;
   padding: 10px;
   justify-content: center;
@@ -131,7 +129,7 @@ button{
 }
 
 
-.card .figure-img {
+.card .card-img {
   position: relative;
   border-radius: 12px;
   overflow: hidden; 
@@ -139,7 +137,7 @@ button{
 }
 .card .card-img img{
   width: 100%;
-  height: 100%;
+ height: min-content;
   transition: .4s;
   
  
@@ -333,7 +331,7 @@ button{
 .contenedor img{
 @extend %img-extend
 }
-.contenedor .style img:hover{
+.contenedor img:hover{
   border: 1px solid rgb(81, 218, 223);
   transform: rotate(-3deg);
   
