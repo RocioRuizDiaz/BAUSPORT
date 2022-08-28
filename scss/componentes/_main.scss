@@ -6,9 +6,10 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-#galeria .col-lg-4{
+#galeria .col-lg-3{
   margin: 0 !important;
   padding: 10px;
   
@@ -26,19 +27,36 @@
 h1{
   @extend %fontPrincipal !optional;   
 }
+h2{
+  text-align: center;
+  font-size: $secundarFont,$fontSize;
+  padding: 10px;       
+}
+h4{
+  text-align: center;
+  font-size: $p;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+
+}
 .container{
   position: relative;
   width: $w-100;
-  display: flex;
-  flex-direction: column;
-  
+  justify-content: center;
+  min-width: min-content;
   }
-
+.row{
+  position: relative;
+  justify-content: center;
+  height: min-content;
+  padding: 20px;
+  margin: 20px 5;
+}
 .article-card-img{
     border: 5px solid white;
     border-radius: 30px;
     margin-top: calc(-48px - 5px);
-    
+    width: 300px;
     
   }
 
@@ -75,9 +93,9 @@ h1{
 /* PRODUCTOS */
   
 p{
-  font-size: $p-text;
+  font-size: $fontSize;
   margin-bottom: 0.5em;
-  color: rgba(14, 14, 15, 0.705);
+  color:black;
   font-weight: 700;
 }
 
@@ -92,16 +110,103 @@ button{
     text-decoration: none;
   }
 }     
-
-h2{
-    text-align: center;
-    font-size: $secundarFont,$fontSize;
-    padding: 10px;       
+       
+    /* PROMOCIONES */
+.card {
+  position: relative;
+  width: 300px;
+  height: min-content;
+  padding: 10px;
+  justify-content: center;
+  border: 2px solid #e1e3e6;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: .3s;
+  min-height: max-content; 
+    &:hover {
+    border-color: #ffffff;
+    transform: translateY(-10px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.8);
   }
-        
-    /* PROCIONES */
+}
 
-    /* MARCAS */
+
+.card .figure-img {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden; 
+  
+}
+.card .card-img img{
+  width: 100%;
+  height: 100%;
+  transition: .4s;
+  
+ 
+}
+.card .card-title h3{
+  color: #101214;
+  font-size: 30px;
+  
+}
+.card .card-title p {
+  color: #060607f5;
+  font-size:$p-text;
+  margin-top: -4px;
+  font-weight: 700;
+  letter-spacing: -.5px;
+}
+.card:hover .card-img {
+  transform: scale(1.06);
+
+    .card .card-img i{
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color:#757d8a;
+    background-color: #ffffff;
+    padding: 6px;
+    border-radius: 6px;
+  }
+}
+
+.card .card-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .card .card-details .precio  {
+    color: #1b1c1f;
+    font-size: 20px;
+    }
+     
+}
+.card .card-details .precio p {
+   color: #0b0b0c;
+   font-size: 20px;
+    font-weight: 800;
+  }
+  .card .card-details .colors {
+    display: flex;
+   
+  }
+
+
+.card .card-footer button {
+  cursor: pointer;
+  width: $w-100;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #25aae1, #7582fa, #07a1d4, #3781f0);
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  letter-spacing: .5px;
+}
+
+
+/* MARCAS */
 .marca{
     width: $w-100;
     padding: 10px;
@@ -126,23 +231,114 @@ h2{
   
    
     /* CONTACTOS */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $secundarFont;
+ }
+ .gradient{
+  background: linear-gradient(to right, #d0e1e9, #c1cce0, #9ddef3, #8eb2e9);
+ }
   
-.form{
-      display: flex;
-      text-align: center;
-      justify-content: center;
-      background-color: map-get($map: $gama, $key:'siete' ) ;
+   /* FORM */ 
+.form-style input{
+    border: 0;
+    height: 50px;
+    border-radius: 1px;
+    border-bottom: 1px solid #ebebeb;
+    .form-style input:focus {
+      border-bottom: 1px solid #007bff;
+      box-shadow: none;
+      outline: 0;
+      background-color: #ebebeb;
+      border-radius: 3px;
     }
-.style {
-      @extend %btn-bett;
-        .card{
-          width:$w-100;
-          gap: 20px;
-          
-        }
-         
-    }
+  }
+   
+button{
+  height: 50px;
+  cursor: pointer;
+  border-radius: 1em;
+  border: none;
+  font-size: 1.1em;
+  font-weight: bolder;
+  background: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+}
+
+.flipped {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  transform: rotateY(0deg); 
+}
+.reverse{
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  transform: rotateY(180deg);
+}
+.correct {
+  opacity:  0.5;
+  cursor: default;
+  transform-style: preserve-3d;
+  position: relative;
+  transform: rotateY(0deg);
+}
+ /*iconos*/
+.iconos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3em;
+  margin-top: 0.5em;
+
+}
+
+
+.iconos a{
+  text-decoration: none;
+  font-size: 1em;
+  margin: 0.2em;
+}
+ 
+
+.iconos .fa-facebook-f{
+  border-radius: 50%;
+  background:map-get($map: $gama, $key:'diez' );
+  color: #fff;
+  padding: 1em;
+}
+
+.iconos .fa-twitter{
+  border-radius: 50%;
+  background:map-get($map: $gama, $key:'cuatro' );
+  color: #fff;
+  padding: 1em;
+}
+.iconos .fa-google{
+  border-radius: 50%;
+  background:map-get($map: $gama, $key:'dos' );
+  color: #fff;
+  padding: 1em;
+}
+
+
+  /*PUMA STYLE */
+.contenedor {
+ @extend %style-extend; 
+  box-sizing: border-box;
+  background: #4b4b52;
+ }
   
+
+.contenedor img{
+@extend %img-extend
+}
+.contenedor .style img:hover{
+  border: 1px solid rgb(81, 218, 223);
+  transform: rotate(-3deg);
+  
+}
+
     /*========Error 404====*/
 
  .page_404{

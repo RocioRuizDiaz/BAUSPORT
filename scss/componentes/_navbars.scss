@@ -5,7 +5,9 @@
     display: flex;
     justify-content: center;
     position: relative;
-    img{
+    align-items: center;
+    justify-content: space-between;
+        img{
         width: 130px;
     }
     ul{
@@ -17,14 +19,14 @@
             margin:0 20px;
             transition: 0.5s;
             a{
-                font-size: $nav_a-size; 
+                font-size: $fontSize; 
+                font-weight: 700;
                 color:rgb(15, 15, 15);
                 text-decoration: none;
-                line-height: 20px;
+                line-height: 10px;
                 position: relative;
                 z-index: 1;
-                display: inline-block;
-                text-align: center;
+                text-align: end;
                 
 
                 
@@ -32,14 +34,4 @@
             }
         }
     }
-}
-
-
-.nav-button{
-display: flex;
-align-items: center;
-justify-content:center;
-width: 64px;
-height: 64px;
-
 }
